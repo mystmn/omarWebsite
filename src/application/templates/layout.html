@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {% block head %}
+    {% endblock %}
+     {% if title %}
+        <title>{{title}} - microblog</title>
+    {% else %}
+        <title>MicroSet</title>
+    {% endif %}
+</head>
+<body>
+    <div class='important'>
+    <h1>Hello, {{ user.name }}!</h1>
+    <div id="content">{% block test %}{% endblock %}</div>
+    </div>
+</body>

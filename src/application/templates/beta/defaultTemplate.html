@@ -1,0 +1,14 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content={% block metaKeywords %}{% endblock %}>
+    <meta name="description" content={% block metaDescription %}{% endblock %}>
+    <title>{{ title }}{% block title %}{% endblock %}</title>
+    {% block inc_script %}{#Include <css> and <js> #}{% endblock %}
+</head>
+<body>
+{% include "beta/head.html" %} {#includes header template and menu roadmap #}
+{% block main_content %}{% endblock %}
+{% include "beta/footer.html" %}
+</body>
+</html>
