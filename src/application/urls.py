@@ -9,6 +9,33 @@ from flask import render_template
 from application import app
 from application import views
 
+################# My [Rules Start] #################
+mainFolder = "/beta"
+
+app.add_url_rule('/test', 'index', view_func=views.index)
+
+app.add_url_rule(mainFolder, 'betaIndex', view_func=views.betaIndex)
+
+app.add_url_rule('/beta/team', 'betaAbout', view_func=views.betaAbout)
+
+
+################# [Rules End] #################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## URL dispatch rules
 # App Engine warm up handler

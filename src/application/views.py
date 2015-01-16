@@ -28,6 +28,30 @@ cache = Cache(app)
 def home():
     return redirect(url_for('list_examples'))
 
+def index():
+    user = {'name': 'Paul'}
+    title = "Paul Cameron"
+    return render_template('topHeader.html', user=user, title=title)
+
+def betaIndex():
+    title = "Index"
+    return render_template('beta/index.html', title=title)
+
+def betaAbout():
+    title = "About"
+    return render_template('beta/team.html', title=title)
+
+
+
+
+
+
+
+
+
+
+
+
 
 def say_hello(username):
     """Contrived example to demonstrate Flask's url routing capabilities"""
