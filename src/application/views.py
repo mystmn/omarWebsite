@@ -26,7 +26,7 @@ cache = Cache(app)
 
 
 def home():
-    return redirect(url_for('list_examples'))
+    return render_template('home.html')
 
 def index():
     user = {'name': 'Paul'}
@@ -48,14 +48,6 @@ def alphaTest():
 def charley():
     title = "Testing Env"
     return render_template('charleyTest.html', title=title)
-
-
-
-
-
-
-
-
 
 
 
