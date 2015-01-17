@@ -39,5 +39,11 @@ handlers:
 - url: /static
   static_dir: application/static
 
+- url: /static
+  static_dir: application/beta
+
+- url: /static
+  static_dir: application/alpha
+
 - url: .*
   script: run.application.app
