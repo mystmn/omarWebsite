@@ -16,6 +16,9 @@ app.add_url_rule('/beta', 'betaIndex', view_func=views.betaIndex)
 
 app.add_url_rule('/beta/team', 'betaAbout', view_func=views.betaAbout)
 
+app.add_url_rule('/alpha', 'alphaTest', view_func=views.alphaTest)
+
+
 
 ################# [Rules End] #################
 
