@@ -35,11 +35,11 @@ def index():
 
 def betaIndex():
     title = "Index"
-    return render_template('beta/index.html', title=title)
+    return render_template('/beta/index.html', title=title)
 
 def betaAbout():
     title = "About"
-    return render_template('beta/team.html', title=title)
+    return render_template('/beta/team.html', title=title)
 
 def alphaTest():
     title = "Testing Env"
@@ -47,7 +47,7 @@ def alphaTest():
 
 def charley():
     title = "Testing Env"
-    return render_template('/charleyTest.html', title=title)
+    return render_template('charleyTest.html', title=title)
 
 
 
