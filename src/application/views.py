@@ -45,6 +45,10 @@ def alphaTest():
     title = "Testing Env"
     return render_template('/alpha/home.html', title=title)
 
+def charley():
+    title = "Testing Env"
+    return render_template('/charleyTest.html', title=title)
+
 
 
 

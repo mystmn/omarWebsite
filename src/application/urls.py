@@ -18,7 +18,7 @@ app.add_url_rule('/beta/team', 'betaAbout', view_func=views.betaAbout)
 
 app.add_url_rule('/alpha', 'alphaTest', view_func=views.alphaTest)
 
-
+app.add_url_rule('/charley', 'charley', view_func=views.charley)
 
 ################# [Rules End] #################
 
